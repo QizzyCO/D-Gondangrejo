@@ -1,0 +1,7 @@
+{
+  "name": "D’Gondangrejo Restaurant",
+  "description": "Website profesional untuk Restoran D’Gondangrejo dengan nuansa Jawa modern, fasilitas lengkap, dan pelayanan terbaik.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

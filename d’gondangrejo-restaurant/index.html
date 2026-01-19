@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D’Gondangrejo - Rest Area & Restoran Khas Jawa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --jawa-red: #8B0000;
+      --jawa-red-dark: #660000;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(139, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxQBIRLuWH-jO4-388f7kb4Bnd2AsfGfdzT5pvBj9aUOiL-LPP5UyQS2d7bPvFm4CJPukcwl0wILSY0g_MkOPGjLrdO4Ahz7OAkQfFRYCjay9WR0N_DPBX50bHGC2bXbz6wpsdX=w1200-h800-k-no');
+      background-size: cover;
+      background-position: center;
+    }
+    .scroll-mt-nav {
+      scroll-margin-top: 80px;
+    }
+    
+    /* Batik Pattern Decoration */
+    .bg-batik {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L35 25L60 30L35 35L30 60L25 35L0 30L25 25Z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+    }
+
+    .bg-batik-red {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L35 25L60 30L35 35L30 60L25 35L0 30L25 25Z' fill='%238B0000' fill-opacity='0.05'/%3E%3C/svg%3E");
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(2deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    .animate-slideUp {
+      animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .animate-scaleIn {
+      animation: scaleIn 0.6s ease-out forwards;
+    }
+
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .stagger-5 { animation-delay: 0.5s; }
+    .stagger-6 { animation-delay: 0.6s; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-stone-50 text-stone-900">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
